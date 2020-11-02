@@ -1,4 +1,12 @@
 # Nhúng giá trị vào trong chuỗi
+"""
+    Lệnh print() là lệnh in ra màn hình một chuỗi ký tự được đặt trong dấu nháy kép hoặc nháy đơn
+    Lệnh print() cũng in được ra giá trị của một biến. Giá trị này đặt ngoài dấu nháy
+    Để in ra một chuỗi có kèm giá trị của các biến ta dùng các cú pháp sau
+    print("nội dung chuỗi",biến) hoặc print("nội dung chuỗi %d" %(biến)
+    hoặc print("chuỗi {}".format(biến)).
+    Các lệnh sẽ được trình bày rõ bằng các ví dụ bên dưới
+"""
 name, py = 'Py', "Thon"
 print('Xin chao %s. Toi la %s' % (name, py))
 # In ra màn hình doạn văn bản "Xin chao %s. Toi la %s " trong đó %s là thẻ định dạng ký tự
