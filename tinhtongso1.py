@@ -12,8 +12,8 @@ while True:
         break
 x = float(input('Nhập số thực x bất kỳ: '))
 
-# Tính tổng S2
+# Tính tổng S1
 s1 = 1
 for i in range(1, n + 1):
     s1 = s1 + (x ** i)
-print(s1)
+print('Tổng S1 = ',s1)
