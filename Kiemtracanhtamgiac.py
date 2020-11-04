@@ -15,5 +15,7 @@ if a + b > c and a + c > b and b + c > a:
         # Nếu một tam giác có bình phương của một cạnh bằng tổng bình phương hai cạnh kia
         # thì đó là tam giác vuông
         print('Đây là ba cạnh của một tam giác vuông')
+    else:
+        print('Đây không phải là tam giác vuông')
 else:
     print('a 1= {}, b = {}, c = {} không phải là ba cạnh của một tam giác'.format(a, b, c))
