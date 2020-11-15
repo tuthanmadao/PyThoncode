@@ -12,6 +12,7 @@
 # Cho chuối s như sau:
 s = "    toi hoc lap trinh PYTHON Tai trUng taM PlusPlus    "
 
+# ######################################################################
 # Lệnh s.upper(): lênh này sẽ chuyển các ký tự của chuối "s" thành in hoa
 
 print(s.upper())
@@ -19,6 +20,7 @@ print(s.upper())
 # Kết quả lúc này sẽ là:
 # "   TOI HOC LAP TRINH PYTHON TAI TRUNG TAM PLUSPLUS    "
 
+# ######################################################################
 # Lệnh s.lower(): lệnh này sẽ chuyển các ký tự trong chuỗi "s" về in thường
 
 print(s.lower())
@@ -27,7 +29,7 @@ print(s.lower())
 # Chuỗi chưa đổi là:"    toi hoc lap trinh PYTHON Tai trUng taM PlusPlus    "
 # Chuỗi sau khi đổi:"    toi hoc lap trinh python tai trung tam plusplus    "
 
-
+# ######################################################################
 # Lênh s.title(): Lệnh này sẽ viết đầu tất cả các chữ cái đầu của các từ trong một chuỗi
 # hoặc đầu các đoạn ký tự được phân tách nhau bằng dấu cách. Đồng thời chuyển các ký tự còn lại
 # của từ hoặc đoạn ký tự thành in thường
@@ -38,7 +40,7 @@ print(s.title())
 # Chuỗi cũ: "    toi hoc lap trinh PYTHON Tai trUng taM PlusPlus    "
 # Chuỗi mới:"    Toi Hoc Lap Trinh Python Tai Trung Tam Plusplus    "
 
-
+# ######################################################################
 # Lệnhs.strip(): Lênh này sẽ xóa khoảng trắng ở đầu và cuối chuỗi "s"
 
 print(s.strip())
@@ -47,6 +49,7 @@ print(s.strip())
 # Chuỗi cũ :"    toi hoc lap trinh PYTHON Tai trUng taM PlusPlus    "
 # Chuỗi mới:"toi hoc lap trinh PYTHON Tai trUng taM PlusPlus"
 
+# #####################################################################
 # Lệnh s.lstrip(): Xóa khoảng trắng ở đầu chuỗi "s".
 
 print(s.lstrip())
@@ -55,6 +58,7 @@ print(s.lstrip())
 # Chuỗi cũ :"    toi hoc lap trinh PYTHON Tai trUng taM PlusPlus    "
 # Chuỗi mới:"toi hoc lap trinh PYTHON Tai trUng taM PlusPlus    "
 
+# #####################################################################
 # Lệnh s.rstrip(): Lênh xóa khoảng trắng ở cuối chuỗi "s"
 
 print(s.rstrip())
