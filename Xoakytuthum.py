@@ -13,7 +13,10 @@
     vào chuỗi mới. Sau khi duyệt xong ta sẽ in ra chuỗi mới đã xóa đi phần tử thứ m
 """
 str1 = input("Nhập vào một chuỗi: ")
-m = int(input("bạn muốn xóa ký tự thứ mấy: "))
+while True:
+    m = int(input('Nhập vào vị trí m cần xóa: '))
+    if 0 <= m:
+        break
 str2 = ""
 if len(str1) > 0:
     if m < len(str1):
