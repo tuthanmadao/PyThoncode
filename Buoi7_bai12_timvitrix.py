@@ -4,7 +4,7 @@
     trả lại tất cả các vị trí mà x xuất hiện trong a_list, nếu không có thì trả lại -1
 """
 a_list = [1, "1", 2, 3, 4, 1, "1", 4, "banana", "Banana", "apple", "xoai"]
-
+ky_tu = 1
 
 def find_x(list1, x):
     """
@@ -47,5 +47,5 @@ def find_x1(list1, x):
         return -1
 
 
-print(find_x1(a_list, 1))
-print(find_x(a_list, 1))
+print(f"Cách 1: các vị trí xuất hiện phần tử {ky_tu} là {find_x(a_list, ky_tu)}")
+print(f"Cách 2: các vị trí xuất hiện phần tử {ky_tu} là {find_x1(a_list, ky_tu)}")
