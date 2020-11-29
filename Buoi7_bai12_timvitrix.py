@@ -1,0 +1,45 @@
+"""
+    Viết hàm
+        def find_x(a_list, x)
+    trả lại tất cả các vị trí mà x xuất hiện trong a_list, nếu không có thì trả lại -1
+"""
+a_list = [1, "1", 2, 3, 4, 1, "1", 4, "banana", "Banana", "apple", "xoai"]
+
+
+def find_x(list1, x):
+    """
+        Tìm vị trí các phần thử giống x, ta dùng vòng lặp for để duyệt. Duyệt từng phần tử trong list, nếu:
+            + phần tử giống x ta append vị trí i của phần tử dó vào một list
+            + nếu không giống ta chuyển sang phần tử tiếp
+        sau khi duyệt xong ta tìm độ dài của list vừa tìm được. Nếu:
+            + Độ dài bằng 0 ta đẩy ra giá trị -1
+            + ĐỘ dài khác 0 ta đẩy ra list vừa tìm được
+    :param list1: list chứa các giá trị
+    :param x: phần tử cần tìm trong list
+    :return: giá trị của các phần tử giống x. nếu ko có pt trùng thì return -1
+    """
+    list_a = []
+    for i in range(len(list1)):
+        if list1[i] == x:
+            list_a.append(i)
+    if len(list_a) != 0:
+        return list_a
+    else:
+        return -1
+
+
+def find_x1(list1, x):
+    """
+    Sử dụng hàm lambda, filter
+    :param list1: list chứa các phần tử cần so sánh
+    :param x: phần tử cần tìm trong list
+    :return: giá trị của các phần tử giống x. nếu ko có pt trùng thì return -1
+    """
+    if len(list(filter(lambda i: list1[i] == x, range(len(list1))))) != 0:
+        return list(filter(lambda i: list1[i] == x, range(len(list1))))
+    else:
+        return -1
+
+
+print(find_x1(a_list, 1))
+print(find_x(a_list, 1))

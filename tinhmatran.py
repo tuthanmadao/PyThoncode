@@ -3,7 +3,6 @@
 """
 import numpy as np
 import random
-A = []
 B = []
 m = int(input("nhập vào số m = "))
 n = int(input("nhập vào số n = "))

@@ -2,6 +2,7 @@
     Viết chương trình lấy ra các phần tử key-value xuất hiện trong cả 2 dict
     - Trường hợp 1: Chỉ tính đến các key có trong cả hai dict. Sử dụng nhanh toán tử in để tìm kiếm
     - Trường hợp 2: Cả cặp key - value đều phải có trong hai dict
+    - Trong bài này ta cần đó là trường hợp 2.
 """
 dict_01 = {
     1: "ga",
