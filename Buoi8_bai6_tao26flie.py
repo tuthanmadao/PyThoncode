@@ -23,6 +23,7 @@ def xoa_file():
     for item in range(65, 91, 1):
         ten_file = chr(item) + ".txt"
         os.remove(ten_file)
-tao_file()
 
+
+tao_file()
 # xoa_file()
