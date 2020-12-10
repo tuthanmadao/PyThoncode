@@ -183,23 +183,33 @@ while True:
         Tôi là AI có các chức năng cơ bản như là:
         Tự giới thiệu về bản thân.
         Lấy được ngày giờ
+        lấy được thông tin thời tiết
+        học một hoặc nhiều câu thoại đơn giản
+        nhắc lại các câu thoại được dạy
         Hết rồi. Rất mong tôi sẽ sớm được nâng cấp nhiều chức năng hơn.
         """
     elif "giờ" in you:
+        # bot sẽ lấy thông tin giờ phút giây khi nghe lệnh giờ trong câu lệnh của người dùng
         bot_brain = ("Bây giờ là: " + time.strftime("%H:%M:%S"))
     elif "ngày" in you:
+        # bot sẽ lấy thông tin ngày/tháng/năm khi nghe lệnh ngày trong câu lệnh của người dùng
         bot_brain = ("Hôm nay là ngày: " + time.strftime("%d/%m/%Y"))
     elif "thứ" in you:
+        # Lấy thông tin về thứ trong tuần
         bot_brain = "Hôm nay là " + thu_trong_tuan[int(time.strftime("%w"))]
     elif "học" in you:
+        # Lệnh bot học
         bot_learning()
         bot_brain = "Kết thúc việc học"
     elif "nhắc lại" in you:
+        # lệnh bot nhắc lại những gì được dạy
         bot_repeat()
         bot_brain = "kết thúc việc nhắc lại"
     elif "thời tiết" in you:
+        # Lệnh cho bot tìm thông tin thời tiết
         bot_brain = bot_weather_string(bot_weather())
     elif "kết thúc" in you:
+        # Kết thúc tác vụ của bót.
         ai_speak("Tạm biệt")
         break
     else:
