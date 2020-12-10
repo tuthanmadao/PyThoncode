@@ -5,6 +5,7 @@ ten_file = "file_test.txt"
 so_dong = int(input("Hãy nhập số dòng mà bạn muốn đọc: "))
 
 
+
 def read_file(n, file):
     """
         Đọc số dòng từ file do người dùng đặt vào.
