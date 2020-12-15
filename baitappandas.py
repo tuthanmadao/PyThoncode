@@ -1,14 +1,18 @@
 """
- __Bài tập về nhà__
-Ý số 2 của bài trên
-1. khai báo function với def
-2. khai báo function lambda
-3. cách bí mật cực kì đơn giản :))
-
+        __Bài tập về nhà__
+    Ý số 2 của bài trên
+    1. khai báo function với def
+    2. khai báo function lambda
+    3. cách bí mật cực kì đơn giản :))
 """
 import numpy as np
 import pandas as pd
 import math
+
+
+def log_pandas():
+    return np.log
+
 
 area = pd.Series({'California': 423967, 'Texas': 695662,
                   'New York': 141297, 'Florida': 170312,
@@ -19,5 +23,6 @@ pop = pd.Series({'California': 38332521, 'Texas': 26448193,
 data = pd.DataFrame({'area': area, 'pop': pop})
 print(data)
 print(data.applymap(np.log))
-print(np.log(423967))
-print(math.log(423967))
+print(data.applymap(log_pandas()))  # Dùng function với def
+print(data.applymap(lambda x: np.log(x)))  # Dùng với làm lambda
+print(np.log(data))
