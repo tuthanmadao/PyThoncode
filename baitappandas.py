@@ -25,4 +25,4 @@ print(data)
 print(data.applymap(np.log))
 print(data.applymap(log_pandas()))  # Dùng function với def
 print(data.applymap(lambda x: np.log(x)))  # Dùng với làm lambda
-print(np.log(data))
+print(np.log(data))  # các 3?
